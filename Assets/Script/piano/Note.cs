@@ -10,12 +10,13 @@ public class Note : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    public float Speed = 1.0f;
+    public float SpeedCoeff = 1.0f;
+    public float Speed;
 
     void Start()
     {
         rb.linearVelocity = new Vector2(0,rb.linearVelocity.y-Speed);
-        Debug.Log(rb.linearVelocity);
+        
     }
 
     private void Awake()
