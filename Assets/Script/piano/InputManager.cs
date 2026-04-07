@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
     public TapLineDetector tapLine;
 
 
-    public KeyCode[] laneKeys = { KeyCode.A, KeyCode.S, KeyCode.F, KeyCode.G };
+    public KeyCode[] laneKeys = { KeyCode.Q, KeyCode.S, KeyCode.F, KeyCode.G };
 
     private void Update()
     {
