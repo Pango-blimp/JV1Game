@@ -7,7 +7,7 @@ public class InputManager : MonoBehaviour
     public TapLineDetector tapLine;
 
 
-    public KeyCode[] laneKeys = { KeyCode.Q, KeyCode.S, KeyCode.L, KeyCode.M };
+    public KeyCode[] laneKeys = { KeyCode.Q, KeyCode.S, KeyCode.M, KeyCode.Alpha5 };
 
     private void Update()
     {
@@ -24,10 +24,10 @@ public class InputManager : MonoBehaviour
 
     NoteType GetInputType()
     {
-        if (Input.GetKey(KeyCode.LeftControl) && !Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftAlt) && !Input.GetKey(KeyCode.Space))
             return NoteType.Minor;
 
-        if (Input.GetKey(KeyCode.LeftShift) && !Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.Space) && !Input.GetKey(KeyCode.LeftAlt))
             return NoteType.Major;
 
         return NoteType.Neutral;
