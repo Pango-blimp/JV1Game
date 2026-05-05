@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3144314457081506133}
   - component: {fileID: 1206685554713208921}
   m_Layer: 0
-  m_Name: NoteMinor
+  m_Name: NoteMinorV1
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
