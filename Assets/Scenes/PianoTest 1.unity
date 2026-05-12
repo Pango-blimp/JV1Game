@@ -4218,8 +4218,7 @@ MonoBehaviour:
   - {fileID: 606985145}
   - {fileID: 1770308282}
   tapLine: {fileID: 277437212}
-  hitWindow: 1
-  punishWindow: 5
+  punishY: 7.5
   laneKeys: 71000000730000006c0000006d000000
 --- !u!4 &1370944065
 Transform:

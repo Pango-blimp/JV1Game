@@ -6,8 +6,7 @@ public class InputManager : MonoBehaviour
 
     public TapLineDetector tapLine;
 
-    public float hitWindow = 0.3f;
-    public float punishWindow = 0.6f;
+    public float punishY = 5f;
 
     public KeyCode[] laneKeys = { KeyCode.Q, KeyCode.S, KeyCode.M, KeyCode.Alpha5 };
 
@@ -35,7 +34,7 @@ public class InputManager : MonoBehaviour
         return NoteType.Neutral;
     }
 
-    void CheckHit(int lane, NoteType type)
+    /*void CheckHit(int lane, NoteType type)
     {
 
         Note bestNote = null;
@@ -54,68 +53,82 @@ public class InputManager : MonoBehaviour
                 }
             }
         }
-        /*if (bestNote != null)
-        {
-            bestNote.Hit(type);
-        }
-        else
-        {
-            GameManager.instance.WrongInput();
-        }*/
-
-        /*if (bestNote != null)
-        {
-            float delta = bestNote.transform.position.y - tapLine.transform.position.y;
-
-            //  note dans la zone de hit
-            if (delta >= 0 && delta < 0.5f)
-            {
-                bestNote.Hit(type);
-                return;
-            }
-
-            // note proche mais ratée ==> pénalité
-            if (delta < 0.7f)
-            {
-                GameManager.instance.WrongInput();
-                return;
-            }
-        }*/
-
         if (bestNote != null)
         {
-            /*float delta = bestNote.transform.position.y - tapLine.transform.position.y;
-            float absDelta = Mathf.Abs(delta);
-
-            
-            if (absDelta < hitWindow)
+            float noteY = bestNote.transform.position.y;
+            if (Mathf.Abs(noteY - tapLine.transform.position.y) < 1f)
             {
                 bestNote.Hit(type);
                 return;
             }
-
-            
-            if (absDelta > punishWindow)
+            if (noteY <= punishY)
             {
                 GameManager.instance.WrongInput();
                 return;
-            }*/
-
-            float delta = bestNote.transform.position.y - tapLine.transform.position.y;
-            float absDelta = Mathf.Abs(delta);
-
-            if (absDelta < hitWindow)
-            {
-                bestNote.Hit(type);
-            }
-            else if (absDelta < punishWindow)
-            {
-                GameManager.instance.WrongInput();
             }
         }
 
+
+    }*/
+
+    Note GetNextNoteInLane(int lane)
+    {
+        Note closest = null;
+
+        foreach (var note in Note.activeNotes)
+        {
+            if (note.lane != lane) continue;
+
+            if (closest == null || note.transform.position.y < closest.transform.position.y)
+            {
+                closest = note;
+            }
+        }
+
+        return closest;
     }
 
+    void CheckHit(int lane, NoteType type)
+    {
+        var notes = tapLine.notesInRange;
+
+        Note noteToHit = null;
+
+        //  chercher une note dans la bonne lane
+        foreach (var note in notes)
+        {
+            if (note.lane == lane)
+            {
+                noteToHit = note;
+                break;
+            }
+        }
+
+        //  HIT si une note est dans la TapLine
+        if (noteToHit != null)
+        {
+            noteToHit.Hit(type);
+            return;
+        }
+
+        //  sinon  gérer le spam intelligemment
+        HandleSpam(lane);
+    }
+
+    void HandleSpam(int lane)
+    {
+        Note nextNote = GetNextNoteInLane(lane);
+
+        if (nextNote == null)
+            return; // aucune note  spam autorisé
+
+        float noteY = nextNote.transform.position.y;
+
+        if (noteY <= punishY)
+        {
+            GameManager.instance.WrongInput();
+        }
+    }
     Vector2 GetLanePosition(int lane)
     {
         return lanes[lane].position;

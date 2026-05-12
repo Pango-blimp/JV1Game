@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Note : MonoBehaviour
@@ -15,7 +16,20 @@ public class Note : MonoBehaviour
     public float SpeedCoeff = 1.0f;
     public float Speed;
 
-    
+    public static List<Note> activeNotes = new List<Note>();
+
+
+    void OnEnable()
+    {
+        activeNotes.Add(this);
+    }
+
+    void OnDisable()
+    {
+        activeNotes.Remove(this);
+    }
+
+
 
     void Start()
     {
