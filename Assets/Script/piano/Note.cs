@@ -6,12 +6,16 @@ public class Note : MonoBehaviour
     public int lane;
     public NoteType type;
 
+    public AudioClip hitSound;
+
     private bool isHit = false;
 
     private Rigidbody2D rb;
 
     public float SpeedCoeff = 1.0f;
     public float Speed;
+
+    
 
     void Start()
     {
@@ -28,16 +32,19 @@ public class Note : MonoBehaviour
     {
         if (isHit) return;
 
-        if (inputType == type) 
+        if (inputType == type)
         {
             isHit = true;
-            Debug.Log("Good Hit");
-            GetComponent<SpriteRenderer>().color = Color.green;
+
+            GameManager.instance.GoodHit();
+
+            AudioManager.instance.PlaySound(hitSound);
+
             Destroy(gameObject, 0.05f);
         }
         else
         {
-            Debug.Log("Wrong Type");
+            GameManager.instance.WrongInput();
         }
     }
 
@@ -45,7 +52,7 @@ public class Note : MonoBehaviour
     {
         if (isHit) return;
 
-        Debug.Log("MISS");
+        GameManager.instance.Miss();
 
         Destroy(gameObject);
     }

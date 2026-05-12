@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PianoTest.unity
     guid: 46aa2fa8d4e2b34448c57e00277b5065
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 10a04b2cf24af394fb18379e1b509349
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

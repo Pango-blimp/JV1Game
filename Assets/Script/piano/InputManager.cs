@@ -6,6 +6,8 @@ public class InputManager : MonoBehaviour
 
     public TapLineDetector tapLine;
 
+    public float hitWindow = 0.3f;
+    public float punishWindow = 0.6f;
 
     public KeyCode[] laneKeys = { KeyCode.Q, KeyCode.S, KeyCode.M, KeyCode.Alpha5 };
 
@@ -52,15 +54,66 @@ public class InputManager : MonoBehaviour
                 }
             }
         }
-        if (bestNote != null)
+        /*if (bestNote != null)
         {
             bestNote.Hit(type);
         }
         else
         {
-            Debug.Log("Miss");
-        }
+            GameManager.instance.WrongInput();
+        }*/
+
+        /*if (bestNote != null)
+        {
+            float delta = bestNote.transform.position.y - tapLine.transform.position.y;
+
+            //  note dans la zone de hit
+            if (delta >= 0 && delta < 0.5f)
+            {
+                bestNote.Hit(type);
+                return;
+            }
+
+            // note proche mais ratée ==> pénalité
+            if (delta < 0.7f)
+            {
+                GameManager.instance.WrongInput();
+                return;
+            }
+        }*/
+
+        if (bestNote != null)
+        {
+            /*float delta = bestNote.transform.position.y - tapLine.transform.position.y;
+            float absDelta = Mathf.Abs(delta);
+
             
+            if (absDelta < hitWindow)
+            {
+                bestNote.Hit(type);
+                return;
+            }
+
+            
+            if (absDelta > punishWindow)
+            {
+                GameManager.instance.WrongInput();
+                return;
+            }*/
+
+            float delta = bestNote.transform.position.y - tapLine.transform.position.y;
+            float absDelta = Mathf.Abs(delta);
+
+            if (absDelta < hitWindow)
+            {
+                bestNote.Hit(type);
+            }
+            else if (absDelta < punishWindow)
+            {
+                GameManager.instance.WrongInput();
+            }
+        }
+
     }
 
     Vector2 GetLanePosition(int lane)

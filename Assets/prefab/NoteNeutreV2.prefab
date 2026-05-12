@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Note
   lane: 0
   type: 0
+  hitSound: {fileID: 8300000, guid: ce69c1bf2a20e7746ae2e03364e73f47, type: 3}
   SpeedCoeff: 1
   Speed: 10
 --- !u!1 &5419047232849872428
