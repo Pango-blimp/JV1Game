@@ -94,7 +94,6 @@ public class InputManager : MonoBehaviour
 
         Note noteToHit = null;
 
-        //  chercher une note dans la bonne lane
         foreach (var note in notes)
         {
             if (note.lane == lane)
@@ -103,15 +102,13 @@ public class InputManager : MonoBehaviour
                 break;
             }
         }
-
-        //  HIT si une note est dans la TapLine
         if (noteToHit != null)
         {
             noteToHit.Hit(type);
             return;
         }
 
-        //  sinon  gérer le spam intelligemment
+      
         HandleSpam(lane);
     }
 
@@ -120,7 +117,7 @@ public class InputManager : MonoBehaviour
         Note nextNote = GetNextNoteInLane(lane);
 
         if (nextNote == null)
-            return; // aucune note  spam autorisé
+            return; 
 
         float noteY = nextNote.transform.position.y;
 
