@@ -5,7 +5,7 @@ public class ShelfInteraction : MonoBehaviour
     [Header("Interaction")]
     public KeyCode interactionKey = KeyCode.E;
     public GameObject canvasToShow;
-    public MonoBehaviour PlayerMovement;
+    public PlayerMovement playerMovement;
 
     [Header("Detection")]
     public string playerTag = "Player";
@@ -16,17 +16,25 @@ public class ShelfInteraction : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(interactionKey))
         {
-            ToggleCanvas();
+            /*ToggleCanvas();*/
+
+            if (playerInRange && Input.GetKeyDown(interactionKey))
+            {
+                if (canvasToShow.activeSelf)
+                    CloseCanvas();
+                else
+                    OpenCanvas();
+            }
         }
     }
 
-    void ToggleCanvas()
+    /*void ToggleCanvas()
     {
         if (canvasToShow != null)
         {
             canvasToShow.SetActive(!canvasToShow.activeSelf);
         }
-    }
+    }*/
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -48,8 +56,8 @@ public class ShelfInteraction : MonoBehaviour
     {
         canvasToShow.SetActive(true);
 
-        if (PlayerMovement != null)
-            PlayerMovement.enabled = false;
+        if (playerMovement != null)
+            playerMovement.enabled = false;
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -59,8 +67,8 @@ public class ShelfInteraction : MonoBehaviour
     {
         canvasToShow.SetActive(false);
 
-        if (PlayerMovement != null)
-            PlayerMovement.enabled = true;
+        if (playerMovement != null)
+            playerMovement.enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
