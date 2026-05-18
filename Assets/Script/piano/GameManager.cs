@@ -1,7 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
+
 {
     public static GameManager instance;
 
@@ -14,6 +17,8 @@ public class GameManager : MonoBehaviour
     public float goodHpGain = 2f;
     public float missHpLoss = 5f;
     public float wrongInputLoss = 8f;
+    public Slider hpBar;
+    public TextMeshProUGUI scoreText;
 
     private void Awake()
     {
@@ -29,11 +34,25 @@ public class GameManager : MonoBehaviour
         Debug.Log("GOOD | Score: " + score + " HP: " + hp);
     }
 
+    void Start()
+    {
+        UpdateUI();
+    }
+
+    void UpdateUI()
+    {
+        hpBar.value = hp;
+
+        scoreText.text = score.ToString("00000000");
+
+    }
+
     public void Miss()
     {
         hp -= missHpLoss;
 
         Debug.Log("MISS | HP: " + hp);
+        UpdateUI();
     }
 
     public void WrongInput()
@@ -41,6 +60,7 @@ public class GameManager : MonoBehaviour
         hp -= wrongInputLoss;
 
         Debug.Log("WRONG | HP: " + hp);
+        UpdateUI();
     }
 
     void Update()
