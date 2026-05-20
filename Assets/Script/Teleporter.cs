@@ -7,7 +7,7 @@ public class Teleporter : MonoBehaviour
     private bool playerInZone = false;
 
     public Transform player;
-    private Vector3 originalScale;
+    /*private Vector3 originalScale;*/
 
     public KeyCode keyToPress = KeyCode.Escape;
 
