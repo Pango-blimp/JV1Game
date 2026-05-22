@@ -32,7 +32,10 @@ public class Teleporter : MonoBehaviour
         if (playerInZone && Input.GetKeyDown(keyToPress))
         {
             {
-                player.position = destination.position;
+                Vector3 newPos = player.position;
+                newPos.x = destination.position.x;
+                
+                player.position = newPos;
             }
         }
     }
