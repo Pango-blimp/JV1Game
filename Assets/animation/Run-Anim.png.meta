@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 841875ef9a2ee0242b5577758c75f827
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3211156976587319069
+    second: Run-Anim_0
+  - first:
+      213: -4738376063147448886
+    second: Run-Anim_1
+  - first:
+      213: -1504923003185449256
+    second: Run-Anim_2
+  - first:
+      213: -458774360312586236
+    second: Run-Anim_3
+  - first:
+      213: -4373360708126670181
+    second: Run-Anim_4
+  - first:
+      213: 2626453788288165290
+    second: Run-Anim_5
+  - first:
+      213: -3879578246875809367
+    second: Run-Anim_6
+  - first:
+      213: 7810315459416548867
+    second: Run-Anim_7
+  - first:
+      213: -2283507022732860085
+    second: Run-Anim_8
+  - first:
+      213: -5973499662134286781
+    second: Run-Anim_9
+  - first:
+      213: 8316936623854963152
+    second: Run-Anim_10
+  - first:
+      213: -7918773142591709053
+    second: Run-Anim_11
+  - first:
+      213: -6425329097036198215
+    second: Run-Anim_12
+  - first:
+      213: 4498856970026891460
+    second: Run-Anim_13
+  - first:
+      213: -7644750296415972258
+    second: Run-Anim_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Run-Anim_0
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 2286
+        width: 239
+        height: 520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17218bb142509c20800000000000000
+      internalID: 3211156976587319069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_1
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 2281
+        width: 230
+        height: 525
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5e1e75318ed3eb0800000000000000
+      internalID: -4738376063147448886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_2
+      rect:
+        serializedVersion: 2
+        x: 4625
+        y: 2281
+        width: 215
+        height: 525
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d631d480807d1be0800000000000000
+      internalID: -1504923003185449256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_3
+      rect:
+        serializedVersion: 2
+        x: 6551
+        y: 2277
+        width: 192
+        height: 529
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400e285662b12a9f0800000000000000
+      internalID: -458774360312586236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_4
+      rect:
+        serializedVersion: 2
+        x: 8473
+        y: 2276
+        width: 173
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9285756b93be43c0800000000000000
+      internalID: -4373360708126670181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_5
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1198
+        width: 159
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa525ed0ec9037420800000000000000
+      internalID: 2626453788288165290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_6
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 1203
+        width: 152
+        height: 525
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a972aca328f82ac0800000000000000
+      internalID: -3879578246875809367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_7
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 1212
+        width: 182
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306e34e8780d36c60800000000000000
+      internalID: 7810315459416548867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_8
+      rect:
+        serializedVersion: 2
+        x: 6541
+        y: 1203
+        width: 211
+        height: 525
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45e5eb167a5f40e0800000000000000
+      internalID: -2283507022732860085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_9
+      rect:
+        serializedVersion: 2
+        x: 8473
+        y: 1198
+        width: 201
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346e19cc4bdd91da0800000000000000
+      internalID: -5973499662134286781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_10
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 115
+        width: 201
+        height: 534
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9cf4c5bc1bb6370800000000000000
+      internalID: 8316936623854963152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_11
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 110
+        width: 197
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380eae248cdda1290800000000000000
+      internalID: -7918773142591709053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_12
+      rect:
+        serializedVersion: 2
+        x: 4634
+        y: 106
+        width: 187
+        height: 543
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be0d26aa35a4d6a0800000000000000
+      internalID: -6425329097036198215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_13
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 110
+        width: 163
+        height: 539
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c83eb904962f6e30800000000000000
+      internalID: 4498856970026891460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run-Anim_14
+      rect:
+        serializedVersion: 2
+        x: 8468
+        y: 124
+        width: 192
+        height: 525
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e545099eb1468e590800000000000000
+      internalID: -7644750296415972258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 515ed74a89e489343b917a15c9d64a48
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Run-Anim_0: 3211156976587319069
+      Run-Anim_1: -4738376063147448886
+      Run-Anim_10: 8316936623854963152
+      Run-Anim_11: -7918773142591709053
+      Run-Anim_12: -6425329097036198215
+      Run-Anim_13: 4498856970026891460
+      Run-Anim_14: -7644750296415972258
+      Run-Anim_2: -1504923003185449256
+      Run-Anim_3: -458774360312586236
+      Run-Anim_4: -4373360708126670181
+      Run-Anim_5: 2626453788288165290
+      Run-Anim_6: -3879578246875809367
+      Run-Anim_7: 7810315459416548867
+      Run-Anim_8: -2283507022732860085
+      Run-Anim_9: -5973499662134286781
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float Speed = 5f;
+    Animator animator;
 
     private Rigidbody2D rb;
     private float moveInput;
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -21,6 +23,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
             moveInput = 1;
+
+        if (moveInput != 0)
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = -Mathf.Sign(moveInput) * Mathf.Abs(scale.x);
+            transform.localScale = scale;
+        }
+
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
     }
 
     private void FixedUpdate()
