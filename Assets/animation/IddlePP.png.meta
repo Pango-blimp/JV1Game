@@ -1,0 +1,743 @@
+fileFormatVersion: 2
+guid: 37eba45b2be858e4c90203ea1fe98bf1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6692965289977623363
+    second: IddlePP_0
+  - first:
+      213: -3759506709648912192
+    second: IddlePP_1
+  - first:
+      213: -3669688948192105658
+    second: IddlePP_2
+  - first:
+      213: -2195559126943456381
+    second: IddlePP_3
+  - first:
+      213: 6933704610660296014
+    second: IddlePP_4
+  - first:
+      213: 6109349713362957995
+    second: IddlePP_5
+  - first:
+      213: -6255075271128311537
+    second: IddlePP_6
+  - first:
+      213: 7610922197405976945
+    second: IddlePP_7
+  - first:
+      213: 7309541176495195300
+    second: IddlePP_8
+  - first:
+      213: -5707307025419655902
+    second: IddlePP_9
+  - first:
+      213: 8911266185995432377
+    second: IddlePP_10
+  - first:
+      213: -6905925938914380430
+    second: IddlePP_11
+  - first:
+      213: 7410177509135359977
+    second: IddlePP_12
+  - first:
+      213: -5548708742105068195
+    second: IddlePP_13
+  - first:
+      213: 2433467035131158609
+    second: IddlePP_14
+  - first:
+      213: -6951907433226980477
+    second: IddlePP_15
+  - first:
+      213: -4940431632081842202
+    second: IddlePP_16
+  - first:
+      213: -4455848319427415116
+    second: IddlePP_17
+  - first:
+      213: -4856978560103829288
+    second: IddlePP_18
+  - first:
+      213: -7446471479383873717
+    second: IddlePP_19
+  - first:
+      213: -7660514052382011858
+    second: IddlePP_20
+  - first:
+      213: 4500127225341123188
+    second: IddlePP_21
+  - first:
+      213: -8139938107474124882
+    second: IddlePP_22
+  - first:
+      213: -8038275638629075749
+    second: IddlePP_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IddlePP_0
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 4512
+        width: 159
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343b22b687032ec50800000000000000
+      internalID: 6692965289977623363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_1
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 4512
+        width: 160
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0dda8f09c83dbc0800000000000000
+      internalID: -3759506709648912192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_2
+      rect:
+        serializedVersion: 2
+        x: 4648
+        y: 4516
+        width: 159
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b25de2855a21dc0800000000000000
+      internalID: -3669688948192105658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_3
+      rect:
+        serializedVersion: 2
+        x: 6565
+        y: 4516
+        width: 159
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3832b2b4b9ec781e0800000000000000
+      internalID: -2195559126943456381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_4
+      rect:
+        serializedVersion: 2
+        x: 8487
+        y: 4513
+        width: 159
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4525e76b97793060800000000000000
+      internalID: 6933704610660296014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_5
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 3434
+        width: 159
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba632a11235c8c450800000000000000
+      internalID: 6109349713362957995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_6
+      rect:
+        serializedVersion: 2
+        x: 2726
+        y: 3438
+        width: 154
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0911158e228139a0800000000000000
+      internalID: -6255075271128311537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_7
+      rect:
+        serializedVersion: 2
+        x: 4643
+        y: 3438
+        width: 159
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 179c4850a6d6f9960800000000000000
+      internalID: 7610922197405976945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_8
+      rect:
+        serializedVersion: 2
+        x: 6560
+        y: 3438
+        width: 160
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a44610f8f4b07560800000000000000
+      internalID: 7309541176495195300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_9
+      rect:
+        serializedVersion: 2
+        x: 8482
+        y: 3438
+        width: 159
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22525cdbf729bc0b0800000000000000
+      internalID: -5707307025419655902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_10
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 2356
+        width: 150
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1353bd16d2bab70800000000000000
+      internalID: 8911266185995432377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_11
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 2355
+        width: 150
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2753add92f83920a0800000000000000
+      internalID: -6905925938914380430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_12
+      rect:
+        serializedVersion: 2
+        x: 4652
+        y: 2355
+        width: 146
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef1a9a0f2d36d660800000000000000
+      internalID: 7410177509135359977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_13
+      rect:
+        serializedVersion: 2
+        x: 6574
+        y: 2355
+        width: 145
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d09b02cc60ff2b0800000000000000
+      internalID: -5548708742105068195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_14
+      rect:
+        serializedVersion: 2
+        x: 8496
+        y: 2355
+        width: 141
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 150ad99106965c120800000000000000
+      internalID: 2433467035131158609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_15
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1277
+        width: 141
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383bb13b50dd58f90800000000000000
+      internalID: -6951907433226980477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_16
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 1277
+        width: 136
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef88ac2b9f007bb0800000000000000
+      internalID: -4940431632081842202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_17
+      rect:
+        serializedVersion: 2
+        x: 4662
+        y: 1277
+        width: 136
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3f183cf85a922c0800000000000000
+      internalID: -4455848319427415116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_18
+      rect:
+        serializedVersion: 2
+        x: 6579
+        y: 1277
+        width: 138
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0b253abbb889cb0800000000000000
+      internalID: -4856978560103829288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_19
+      rect:
+        serializedVersion: 2
+        x: 8501
+        y: 1277
+        width: 136
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b472f3184a1d8a890800000000000000
+      internalID: -7446471479383873717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_20
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 195
+        width: 145
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ec1e67e0360b590800000000000000
+      internalID: -7660514052382011858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_21
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 195
+        width: 145
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47a95866ed9a37e30800000000000000
+      internalID: 4500127225341123188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_22
+      rect:
+        serializedVersion: 2
+        x: 4657
+        y: 195
+        width: 150
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafd6522b61290f80800000000000000
+      internalID: -8139938107474124882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IddlePP_23
+      rect:
+        serializedVersion: 2
+        x: 6574
+        y: 195
+        width: 150
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd476d035ee427090800000000000000
+      internalID: -8038275638629075749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 845fc744c7d856442b4ddb5ffec15ae6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      IddlePP_0: 6692965289977623363
+      IddlePP_1: -3759506709648912192
+      IddlePP_10: 8911266185995432377
+      IddlePP_11: -6905925938914380430
+      IddlePP_12: 7410177509135359977
+      IddlePP_13: -5548708742105068195
+      IddlePP_14: 2433467035131158609
+      IddlePP_15: -6951907433226980477
+      IddlePP_16: -4940431632081842202
+      IddlePP_17: -4455848319427415116
+      IddlePP_18: -4856978560103829288
+      IddlePP_19: -7446471479383873717
+      IddlePP_2: -3669688948192105658
+      IddlePP_20: -7660514052382011858
+      IddlePP_21: 4500127225341123188
+      IddlePP_22: -8139938107474124882
+      IddlePP_23: -8038275638629075749
+      IddlePP_3: -2195559126943456381
+      IddlePP_4: 6933704610660296014
+      IddlePP_5: 6109349713362957995
+      IddlePP_6: -6255075271128311537
+      IddlePP_7: 7610922197405976945
+      IddlePP_8: 7309541176495195300
+      IddlePP_9: -5707307025419655902
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,14 +4,13 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject settingsPanel;
+    public SceneFader fader;
 
-    //  New Game
     public void StartGame()
     {
-        SceneManager.LoadScene("Lvl1TheHouse"); // mets le nom exact de ta scène
+        fader.FadeToScene("Lvl1TheHouse");
     }
 
-    // Settings
     public void OpenSettings()
     {
         settingsPanel.SetActive(true);
@@ -22,7 +21,7 @@ public class MainMenu : MonoBehaviour
         settingsPanel.SetActive(false);
     }
 
-    // Quit
+   
     public void QuitGame()
     {
         Debug.Log("Quit Game");
