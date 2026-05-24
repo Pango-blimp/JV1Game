@@ -16,7 +16,7 @@ public class ShelfInteraction : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(interactionKey))
         {
-            /*ToggleCanvas();*/
+
 
             if (playerInRange && Input.GetKeyDown(interactionKey))
             {

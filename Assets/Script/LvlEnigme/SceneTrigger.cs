@@ -5,6 +5,7 @@ public class SceneTrigger : MonoBehaviour
 {
     public string sceneToLoad;
     public KeyCode interactKey = KeyCode.E;
+    public GameObject uiToToggle;
 
     private bool playerInZone = false;
 
@@ -14,6 +15,11 @@ public class SceneTrigger : MonoBehaviour
         {
             SceneManager.LoadScene(sceneToLoad);
         }
+        if (playerInZone && uiToToggle !=null)
+        {
+            uiToToggle.SetActive(true);
+          
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,6 +28,7 @@ public class SceneTrigger : MonoBehaviour
         {
             playerInZone = true;
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -30,5 +37,6 @@ public class SceneTrigger : MonoBehaviour
         {
             playerInZone = false;
         }
+        
     }
 }

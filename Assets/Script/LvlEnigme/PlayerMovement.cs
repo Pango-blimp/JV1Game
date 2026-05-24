@@ -18,8 +18,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveInput = 0;
-        /*if (DialogueManager.instance.dialoguePanel.activeSelf)
-            return;*/
+    
         if (Input.GetKey(KeyCode.Q))
             moveInput = -1;
 

@@ -119,6 +119,108 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &54112462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54112463}
+  - component: {fileID: 54112466}
+  - component: {fileID: 54112465}
+  - component: {fileID: 54112464}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &54112463
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54112462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1581599167}
+  m_Father: {fileID: 1826516818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &54112464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54112462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &54112465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54112462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &54112466
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54112462}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &68342394
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,13 +245,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68342394}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a857e81ec8b77af4cb9f3da018af31d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IntroDialogueTrigger
   introLines:
-  - test
+  - Hello, how are you ?
+  - So you need some help with your music.
+  - First of all, try to wander around. You can use all the instrument to get some
+    inspiration.
+  - And don't forget, you don't need new equipment to create something new.
+  - Try anything and everything.
+  - Once, I wasn't happy with my accompaniment in a composition.
+  - So, i tried using dissonant chords, and it was perfect.
+  - You know, the only limit to your music is your imagination.
 --- !u!4 &68342396
 Transform:
   m_ObjectHideFlags: 0
@@ -544,6 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTrigger
   sceneToLoad: 
   interactKey: 101
+  uiToToggle: {fileID: 1581599166}
 --- !u!61 &184301776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1846,7 +1957,7 @@ GameObject:
   - component: {fileID: 508889651}
   m_Layer: 0
   m_Name: violon_0
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1865,6 +1976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTrigger
   sceneToLoad: PianoTest 1
   interactKey: 101
+  uiToToggle: {fileID: 1581599166}
 --- !u!61 &508889652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1979,9 +2091,9 @@ Transform:
   m_GameObject: {fileID: 508889650}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.11997652, w: 0.99277675}
-  m_LocalPosition: {x: 19, y: 0.92999995, z: 0}
-  m_LocalScale: {x: 0.82264715, y: 0.82264715, z: 0.82264715}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 18.93, y: 1.11, z: 0}
+  m_LocalScale: {x: 0.86742, y: 0.86742, z: 0.86742}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 127095730}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.782}
@@ -3555,7 +3667,7 @@ Transform:
   m_GameObject: {fileID: 948234901}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.41, y: 0.44999993, z: -6.11}
+  m_LocalPosition: {x: 15.75, y: 0.44999993, z: -6.11}
   m_LocalScale: {x: 0.46083, y: 0.46083, z: 0.46083}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4904,6 +5016,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 250405318}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1581599166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581599167}
+  - component: {fileID: 1581599169}
+  - component: {fileID: 1581599168}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1581599167
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581599166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0872, y: 2.0872, z: 2.0872}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 54112463}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 13, y: 150}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1581599168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581599166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -6938209588174523944, guid: 93971f10ca51ecc469c21826d5902154, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1581599169
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581599166}
+  m_CullTransparentMesh: 1
 --- !u!1 &1612107121
 GameObject:
   m_ObjectHideFlags: 0
@@ -5295,6 +5482,7 @@ GameObject:
   - component: {fileID: 1826516821}
   - component: {fileID: 1826516822}
   - component: {fileID: 1826516823}
+  - component: {fileID: 1826516824}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -5311,11 +5499,12 @@ Transform:
   m_GameObject: {fileID: 1826516817}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54, y: -1.28, z: -13.05}
-  m_LocalScale: {x: 0.31302357, y: 0.31302357, z: 0.31302357}
+  m_LocalPosition: {x: 1.98, y: -1.28, z: -13.05}
+  m_LocalScale: {x: -0.3130236, y: 0.31302357, z: 0.31302357}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 298165658}
+  - {fileID: 54112463}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1826516819
@@ -5476,6 +5665,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1826516824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826516817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0f355d81db856a47b8199721ee5c1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  uiToToggle: {fileID: 1581599166}
+  targetTag: Interactible
 --- !u!1 &1835374154
 GameObject:
   m_ObjectHideFlags: 0
@@ -5933,7 +6136,7 @@ GameObject:
   - component: {fileID: 1977456130}
   m_Layer: 0
   m_Name: MB_0
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6092,9 +6295,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b289c17ff0be24595f206bb6f8920e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
+  uiToToggle: {fileID: 1581599166}
   dialogueLines:
-  - Hello, how are you ?
-  - So you need some help with your music ?
+  - Are you doing good ? Try some instrument around.
+  - 'But don''t use the piano right now. He''s out of tune and a string is broken. '
+  - If you really want to use the piano, come back later. I will always be here.
   interactionKey: 101
 --- !u!1 &2005685171
 GameObject:

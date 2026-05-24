@@ -26,17 +26,16 @@ public class SceneFader : MonoBehaviour
             t += Time.deltaTime;
             float progress = t / fadeDuration;
 
-            //  Fade visuel
+
             color.a = progress;
             fadeImage.color = color;
 
-            //  Fade audio
+
             musicSource.volume = Mathf.Lerp(startVolume, 0f, progress);
 
             yield return null;
         }
 
-        // sécurité
         color.a = 1f;
         fadeImage.color = color;
         musicSource.volume = 0f;
