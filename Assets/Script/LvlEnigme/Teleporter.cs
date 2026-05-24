@@ -5,9 +5,10 @@ public class Teleporter : MonoBehaviour
 {
     public Transform destination;
     private bool playerInZone = false;
+    public GameObject uiToToggle;
 
     public Transform player;
-    /*private Vector3 originalScale;*/
+    
 
     public KeyCode keyToPress = KeyCode.Escape;
 
@@ -17,6 +18,11 @@ public class Teleporter : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInZone = true;
+        }
+        if (playerInZone && uiToToggle != null)
+        {
+            uiToToggle.SetActive(true);
+
         }
     }
 

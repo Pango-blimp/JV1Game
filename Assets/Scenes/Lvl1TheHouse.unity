@@ -245,7 +245,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68342394}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a857e81ec8b77af4cb9f3da018af31d7, type: 3}
   m_Name: 
@@ -647,7 +647,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184301774}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4430799b10f13914aa600f8c5421fcfe, type: 3}
   m_Name: 
@@ -1326,7 +1326,7 @@ Transform:
   m_GameObject: {fileID: 298165655}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.46, z: -10}
+  m_LocalPosition: {x: 0, y: 3.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1640,7 +1640,7 @@ GameObject:
   - component: {fileID: 411786197}
   m_Layer: 0
   m_Name: Porte_0 (2)
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1732,6 +1732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   destination: {fileID: 914243068}
+  uiToToggle: {fileID: 0}
   player: {fileID: 1826516818}
   keyToPress: 101
 --- !u!61 &411786198
@@ -2652,7 +2653,7 @@ GameObject:
   - component: {fileID: 761373047}
   m_Layer: 0
   m_Name: Porte_0 (1)
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2744,6 +2745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   destination: {fileID: 804764835}
+  uiToToggle: {fileID: 0}
   player: {fileID: 1826516818}
   keyToPress: 101
 --- !u!61 &761373048
@@ -2806,7 +2808,7 @@ GameObject:
   - component: {fileID: 804764836}
   m_Layer: 0
   m_Name: Porte_0
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2898,6 +2900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   destination: {fileID: 761373046}
+  uiToToggle: {fileID: 1581599166}
   player: {fileID: 1826516818}
   keyToPress: 101
 --- !u!61 &804764837
@@ -3395,7 +3398,7 @@ GameObject:
   - component: {fileID: 914243069}
   m_Layer: 0
   m_Name: Porte_0 (3)
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3487,6 +3490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleporter
   destination: {fileID: 411786196}
+  uiToToggle: {fileID: 0}
   player: {fileID: 1826516818}
   keyToPress: 101
 --- !u!61 &914243070
@@ -5033,7 +5037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1581599167
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5499,9 +5503,9 @@ Transform:
   m_GameObject: {fileID: 1826516817}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.98, y: -1.28, z: -13.05}
-  m_LocalScale: {x: -0.3130236, y: 0.31302357, z: 0.31302357}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: -1.08, z: -13.05}
+  m_LocalScale: {x: -0.33, y: 0.33, z: 0.33}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 298165658}
   - {fileID: 54112463}
@@ -5541,8 +5545,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.38943547, y: -0.12739542}
-  m_Size: {x: 3.7284212, y: 11.703405}
+  m_Offset: {x: -0.40084377, y: -0.21786328}
+  m_Size: {x: 3.4619598, y: 11.959273}
   m_Direction: 0
 --- !u!212 &1826516820
 SpriteRenderer:
@@ -5598,7 +5602,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 4, y: 12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -6175,17 +6179,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07473308, y: 0.074733734}
+  m_Offset: {x: -0.03505087, y: 0.108189344}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.55, y: 5.77}
+    oldSize: {x: 3.1, y: 11.54}
     newSize: {x: 1.55, y: 5.77}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.923669, y: 5.9194674}
+  m_Size: {x: 3.3594413, y: 11.434654}
   m_EdgeRadius: 0
 --- !u!95 &1977456127
 Animator:
@@ -6277,8 +6281,8 @@ Transform:
   m_GameObject: {fileID: 1977456125}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.16, y: -1.13, z: 0}
-  m_LocalScale: {x: 0.69064, y: 0.69064, z: 0.69064}
+  m_LocalPosition: {x: 2.7, y: -1.05, z: 0}
+  m_LocalScale: {x: 0.3636, y: 0.3636, z: 0.3636}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6797,7 +6801,7 @@ Transform:
   m_GameObject: {fileID: 2121108699}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.7, y: 9.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
