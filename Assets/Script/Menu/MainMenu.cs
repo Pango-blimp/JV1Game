@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
+        GameManagerSave.instance.hasSavedPosition = false;
+        GameManagerSave.instance.introDialogueDone = false;
         fader.FadeToScene("Lvl1TheHouse");
     }
 

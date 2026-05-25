@@ -2,16 +2,20 @@ using UnityEngine;
 
 public class IntroDialogueTrigger : MonoBehaviour
 {
-    [Header("Lignes du dialogue d'introduction")]
     [TextArea(3, 5)] 
     public string[] introLines;
 
     void Start()
     {
+        if (GameManagerSave.instance.introDialogueDone)
+            return;
+
         if (DialogueManager.instance != null)
         {
 
             DialogueManager.instance.StartDialogue(introLines);
+
+            GameManagerSave.instance.introDialogueDone = true;
         }
         else
         {

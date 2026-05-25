@@ -4,7 +4,6 @@ using TMPro;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
-
 {
     public static GameManager instance;
 
@@ -17,12 +16,36 @@ public class GameManager : MonoBehaviour
     public float goodHpGain = 2f;
     public float missHpLoss = 5f;
     public float wrongInputLoss = 8f;
+
+    [Header("UI")]
     public Slider hpBar;
     public TextMeshProUGUI scoreText;
+
+    public GameObject gameplayUI;     // CanvaIndicateurTouche
+    public GameObject failUI;         // CanvaFail
+
+    [Header("Audio")]
+    public AudioSource musicSource;
+
+    private bool isGameOver = false;
 
     private void Awake()
     {
         instance = this;
+    }
+
+    void Start()
+    {
+        UpdateUI();
+
+        // IMPORTANT
+        failUI.SetActive(false);
+    }
+
+    void UpdateUI()
+    {
+        hpBar.value = hp;
+        scoreText.text = score.ToString("00000000");
     }
 
     public void GoodHit()
@@ -31,44 +54,74 @@ public class GameManager : MonoBehaviour
         hp += goodHpGain;
         hp = Mathf.Clamp(hp, 0, maxHp);
 
-        Debug.Log("GOOD | Score: " + score + " HP: " + hp);
-    }
-
-    void Start()
-    {
         UpdateUI();
-    }
 
-    void UpdateUI()
-    {
-        hpBar.value = hp;
-
-        scoreText.text = score.ToString("00000000");
-
+        Debug.Log("GOOD | Score: " + score + " HP: " + hp);
     }
 
     public void Miss()
     {
         hp -= missHpLoss;
+        UpdateUI();
 
         Debug.Log("MISS | HP: " + hp);
-        UpdateUI();
+        CheckGameOver();
     }
 
     public void WrongInput()
     {
         hp -= wrongInputLoss;
+        UpdateUI();
 
         Debug.Log("WRONG | HP: " + hp);
-        UpdateUI();
+        CheckGameOver();
     }
 
-    void Update()
+    void CheckGameOver()
     {
-        if (hp <= 0)
+        if (hp <= 0 && !isGameOver)
         {
-            Debug.Log("GAME OVER");
-            SceneManager.LoadScene("GameOver");
+            GameOver();
         }
+    }
+
+    void GameOver()
+    {
+        isGameOver = true;
+
+        Debug.Log("GAME OVER");
+
+        // Stop musique
+        if (musicSource != null)
+            musicSource.Stop();
+
+        // Désactiver gameplay UI
+        if (gameplayUI != null)
+            gameplayUI.SetActive(false);
+
+        // Activer écran fail
+        if (failUI != null)
+            failUI.SetActive(true);
+
+        //  Activer souris
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        //  Pause jeu
+        Time.timeScale = 0f;
+    }
+
+    // Retry
+    public void Retry()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    // Back vers hub
+    public void BackToHub()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Lvl1TheHouse"); //  change si besoin
     }
 }

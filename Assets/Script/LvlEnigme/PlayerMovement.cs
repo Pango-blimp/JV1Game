@@ -17,6 +17,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         moveInput = 0;
     
         if (Input.GetKey(KeyCode.Q))
@@ -31,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
             scale.x = -Mathf.Sign(moveInput) * Mathf.Abs(scale.x);
             transform.localScale = scale;
         }
+
+
 
         animator.SetFloat("Speed", Mathf.Abs(moveInput));
     }

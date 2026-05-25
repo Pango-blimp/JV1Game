@@ -13,6 +13,14 @@ public class SceneTrigger : MonoBehaviour
     {
         if (playerInZone && Input.GetKeyDown(interactKey))
         {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+            if (player != null)
+            {
+                GameManagerSave.instance.SavePlayerPosition(player.transform.position);
+            }
+
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
             SceneManager.LoadScene(sceneToLoad);
         }
         if (playerInZone && uiToToggle !=null)
@@ -38,5 +46,16 @@ public class SceneTrigger : MonoBehaviour
             playerInZone = false;
         }
         
+    }
+    public void LoadScene()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
+        {
+            GameManagerSave.instance.SavePlayerPosition(player.transform.position);
+        }
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
     }
 }
