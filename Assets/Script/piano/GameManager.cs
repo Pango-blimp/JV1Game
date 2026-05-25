@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
     public Slider hpBar;
     public TextMeshProUGUI scoreText;
 
-    public GameObject gameplayUI;     // CanvaIndicateurTouche
-    public GameObject failUI;         // CanvaFail
+    public GameObject gameplayUI;     
+    public GameObject failUI;        
 
     [Header("Audio")]
     public AudioSource musicSource;
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     {
         UpdateUI();
 
-        // IMPORTANT
+        
         failUI.SetActive(false);
     }
 
@@ -91,37 +91,35 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("GAME OVER");
 
-        // Stop musique
         if (musicSource != null)
             musicSource.Stop();
 
-        // Désactiver gameplay UI
         if (gameplayUI != null)
             gameplayUI.SetActive(false);
 
-        // Activer écran fail
+        
         if (failUI != null)
             failUI.SetActive(true);
 
-        //  Activer souris
+       
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        //  Pause jeu
+        
         Time.timeScale = 0f;
     }
 
-    // Retry
+    
     public void Retry()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    // Back vers hub
+    
     public void BackToHub()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Lvl1TheHouse"); //  change si besoin
+        SceneManager.LoadScene("Lvl1TheHouse"); 
     }
 }
