@@ -36006,11 +36006,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   score: 0
-  hp: 100000000
-  maxHp: 100000000
-  goodHpGain: 2
+  hp: 100
+  maxHp: 100
+  goodHpGain: 8
   missHpLoss: 5
-  wrongInputLoss: 8
+  wrongInputLoss: 5
   hpBar: {fileID: 1927229206}
   scoreText: {fileID: 75942914}
   gameplayUI: {fileID: 737679002}

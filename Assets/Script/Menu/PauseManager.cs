@@ -30,7 +30,7 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
 
-        //  Cacher souris
+      
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
   
@@ -44,7 +44,6 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
 
-        //  Afficher souris
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         
@@ -64,7 +63,7 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 0f;
 
-        //  Réactiver souris pour menu
+        
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 

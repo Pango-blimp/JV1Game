@@ -11,7 +11,9 @@ public class SceneFader : MonoBehaviour
 
     public void FadeToScene(string sceneName)
     {
-        StartCoroutine(FadeAndLoad(sceneName));
+        
+        StartCoroutine(FadeAndLoad(sceneName)); 
+       
     }
 
     IEnumerator FadeAndLoad(string sceneName)
@@ -23,7 +25,7 @@ public class SceneFader : MonoBehaviour
 
         while (t < fadeDuration)
         {
-            t += Time.deltaTime;
+            t += Time.fixedDeltaTime;
             float progress = t / fadeDuration;
 
 
@@ -32,14 +34,16 @@ public class SceneFader : MonoBehaviour
 
 
             musicSource.volume = Mathf.Lerp(startVolume, 0f, progress);
-
+            
+            
+            
             yield return null;
         }
 
         color.a = 1f;
         fadeImage.color = color;
         musicSource.volume = 0f;
-
+       
         yield return new WaitForEndOfFrame();
 
         SceneManager.LoadScene(sceneName);

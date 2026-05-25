@@ -6,6 +6,11 @@ public class MainMenu : MonoBehaviour
     public GameObject settingsPanel;
     public SceneFader fader;
 
+    private void Awake()
+    {
+        fader = GetComponent<SceneFader>();
+    }
+
     public void StartGame()
     {
         GameManagerSave.instance.hasSavedPosition = false;
